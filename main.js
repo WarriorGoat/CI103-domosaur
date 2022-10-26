@@ -21,12 +21,10 @@ feather.addEventListener("click", function(){feather.style.opacity = "0.5"})
 let togg = document.querySelector("#toggle");
 let row = document.querySelector("#row");
 togg.addEventListener("click", function(){
-    if(row.style.backgroundColor === "white"){row.style.backgroundColor = "purple"}
-    else {row.style.backgroundColor = "white"}
-    console.log("clicked")
+    if(row.style.backgroundColor === ""){row.style.backgroundColor = "purple"}
+    else {row.style.backgroundColor = ""}
 })
 
 let big = document.querySelector("#biggify");
 big.addEventListener("mouseenter", function(){big.style.width = "200px"})
-
 big.addEventListener("mouseleave", function(){big.style.width = "162px"})
